@@ -1,9 +1,9 @@
-/// @description Insert description here
+/// @description Draw maze borders
 // You can write your code in this editor
 
 
 
-#region --- Draw gradient
+#region --- Draw borders
 
 sc = make_color_rgb(254, 97, 87);
 ec = make_color_rgb(0, 237, 16);

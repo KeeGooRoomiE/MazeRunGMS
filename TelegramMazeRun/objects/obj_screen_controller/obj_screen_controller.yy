@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "RAW",
-    "path": "folders/Objects/RAW.yy",
+    "name": "Controllers",
+    "path": "folders/Objects/Controllers.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_views",
+  "name": "obj_screen_controller",
   "tags": [],
   "resourceType": "GMObject",
 }
