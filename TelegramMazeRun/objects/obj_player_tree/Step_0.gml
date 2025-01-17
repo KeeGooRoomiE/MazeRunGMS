@@ -1,46 +1,4 @@
 /// @description Live reactions to triggers
-//treearr[0]
-if (browser_width > browser_height )
-    {
-	x = camera_get_view_width(view_camera[0]) / 2;
-	y=304
-	}
-	//show_debug_message(treearr);
-#region -- check player living
-
-if (isPlayerLive)
-{
-	playerSpr=global.playerOneSprite;
-}
-else
-{
-	playerSpr=global.playerGrave;
-	player.image_xscale = 1;
-	side = 1;
-}
-
-player.sprite_index = playerSpr;
-player.image_xscale = side * xsc;
-player.image_yscale = xsc;
-
-#endregion
-
-#region -- check player reached nest
-
-/*if (playerReachedNest = true)
-{
-	show_debug_message("!!!PLAYER REACHED NEST!!!");
-	canChomp = false;
-}
-*/
-if ( treearr[0] = 3 or treearr[0] = 4 )
-{
-	canChomp = false;
-	playerReachedNest = true;
-	show_debug_message("!!!PLAYER REACHED NEST!!!");
-}
-	
-#endregion
 
 #region -- left trigger
 

@@ -1,12 +1,5 @@
 /// @description Check statements
-/*
-if (global.playerOneScore > global.playerTwoScore)
-{
-	global.WinPlayerScore = global.playerOneScore;
-}else{
-	global.WinPlayerScore = global.playerTwoScore;
-}
-*/
+
 #region -- Win Statements
 if ( global.pl1 != noone && global.pl2 != noone )
 {
