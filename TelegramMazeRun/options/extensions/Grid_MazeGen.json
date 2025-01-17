@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "Grid_MazeGen",
+    "path": "extensions/Grid_MazeGen/Grid_MazeGen.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
