@@ -1,7 +1,7 @@
 /// @descr Send player creation packet to the server
 function sio_emit_create_player() {
 
-	if !(room == rm04_end)
+	if !(room == rm_end)
 	{
 		var eventName = "create_player";
 

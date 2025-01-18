@@ -19,6 +19,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -28,7 +29,7 @@
     "path": "folders/Objects/Networking.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_networking_init",
+  "name": "obj_player_emit",
   "tags": [],
   "resourceType": "GMObject",
 }

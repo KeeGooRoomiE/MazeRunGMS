@@ -22,8 +22,8 @@ if (browser_width < browser_height )
 if (browser_width < browser_height )
     {
     // MOB
-		canvas_fullscreen(460)
+		canvas_fullscreen()
     }else{
 		//window_set_size(840, 840);
-		canvas_fullscreen(640)
+		canvas_fullscreen()
 	}
