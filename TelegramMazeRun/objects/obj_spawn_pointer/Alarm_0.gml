@@ -14,18 +14,22 @@ if (global.canSpawnUnits)
 		element.image_xscale=image_xscale;
 		element.image_yscale=image_yscale;
 		element.depth=-y;
+		global.gameController.playerList[0] = element;
 		element=instance_create_layer(x+half_size,y+half_size,"Grid",obj_player_ai_right);
 		element.image_xscale=image_xscale;
 		element.image_yscale=image_yscale;
 		element.depth=-y;
+		global.gameController.playerList[1] = element;
 		element=instance_create_layer(x+half_size,y+half_size,"Grid",obj_player_ai_left);
 		element.image_xscale=image_xscale;
 		element.image_yscale=image_yscale;
 		element.depth=-y;
+		global.gameController.playerList[2] = element;
 		element=instance_create_layer(x+half_size,y+half_size,"Grid",obj_player_ai);
 		element.image_xscale=image_xscale;
 		element.image_yscale=image_yscale;
 		element.depth=-y;
+		global.gameController.playerList[3] = element;
 
 		isPlayerSpawn = true;
 	}

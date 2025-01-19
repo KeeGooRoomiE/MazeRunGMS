@@ -29,3 +29,5 @@ for(var i = 0; i<1; i++)
 //b = instance_create_layer(96*2,780,"UI",obj_start_button);
 //b.c = id;
 global.canSpawnUnits = false;
+global.playersCanMove = false;
+global.gesturePanelShown = true;

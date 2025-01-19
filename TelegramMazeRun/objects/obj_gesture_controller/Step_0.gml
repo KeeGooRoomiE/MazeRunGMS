@@ -1,4 +1,4 @@
-///Swipe Action Individualy
+///@description Swipe Action Individualy
 
 if (device_mouse_check_button_pressed(0, mb_left))
     {
@@ -32,6 +32,7 @@ PD = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
 			global.isSwipeLeft = false;
 			global.isSwipeUp = false;
 			global.isSwipeDown = false;
+			alarm[1]=0.5*room_speed;
         } else
         if ((PD > 45) and (PD < 135)) //Up
         and (SwipeSpeed > SwipeCoverSpeed)
@@ -40,6 +41,7 @@ PD = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
 			global.isSwipeLeft = false;
 			global.isSwipeUp = true;
 			global.isSwipeDown = false;
+			alarm[1]=0.5*room_speed;
          // code is executed for swiping up //   
         } else
         if ((PD > 135) and (PD < 225)) //Left
@@ -49,6 +51,7 @@ PD = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
 			global.isSwipeLeft = true;
 			global.isSwipeUp = false;
 			global.isSwipeDown = false;
+			alarm[1]=0.5*room_speed;
          // code is executed for swiping left // 
         } else
         if ((PD > 225) and (PD < 315)) //Down
@@ -58,6 +61,7 @@ PD = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
 			global.isSwipeLeft = false;
 			global.isSwipeUp = false;
 			global.isSwipeDown = true;
+			alarm[1]=0.5*room_speed;
          // code is executed for swiping down //       
         }
     }
@@ -66,6 +70,6 @@ PD = point_direction(MouseXStart, MouseYStart, MouseX, MouseY);
 if (global.isSwiping)
 {
 	part_emitter_region(Part0, PartEmitter0, mouse_x, mouse_x, mouse_y, mouse_y, 0, 0)
-	part_emitter_burst(Part0, PartEmitter0, PartType0, 10);
+	part_emitter_burst(Part0, PartEmitter0, PartType0, 2);
 	part_type_direction(PartType0, PD mod 180, PD mod 180, 0, 0);
 }

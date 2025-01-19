@@ -4,8 +4,14 @@
 
 function move_unit(dir,spd)
 {
-	direction = dir;
-	speed = spd;
+	if (global.playersCanMove) 
+	{
+		direction = dir;
+		speed = spd;
+	} else
+	{
+		speed = 0;
+	}
 }
 
 function check_branch(branch_id) 
@@ -149,6 +155,7 @@ if ( place_meeting(x, y, obj_finish_pointer) )
 	speed = 0;
 	currentDir = 90;
 	direction = 90;
+	global.playersCanMove = false;
 }
 
 if (place_meeting(x, y, obj_releaux_pointer)) {
