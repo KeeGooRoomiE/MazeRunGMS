@@ -1,9 +1,12 @@
-function gmcallback_sio_on_create_player_other()
-{
-	if !(room == rm_out)
+function gmcallback_sio_on_create_player_other() {
+	var data = json_decode(argument[0]);
+
+	with(instance_create_depth(data[? "x"], data[? "y"], 0, oPlayer)) 
 	{
-		var data = json_decode(argument[0]);
-		var data_room_id = real(data[? "room_id"]);
-		var data_user_id = real(data[? "user_id"]);
+		isLocalPlayer = false;
+		playerId = data[? "id"];
+		username = data[? "username"];
+		canShot = data[? "canShot"];
+		
 	}
 }

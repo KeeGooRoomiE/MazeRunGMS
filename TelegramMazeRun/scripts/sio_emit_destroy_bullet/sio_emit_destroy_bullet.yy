@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Events",
-    "path": "folders/Scripts/SocketIO/Events.yy",
+    "name": "Emit",
+    "path": "folders/Scripts/SocketIO/Emit.yy",
   },
   "resourceVersion": "1.0",
-  "name": "gmcallback_sio_on_disconnect_player",
+  "name": "sio_emit_destroy_bullet",
   "tags": [],
   "resourceType": "GMScript",
 }

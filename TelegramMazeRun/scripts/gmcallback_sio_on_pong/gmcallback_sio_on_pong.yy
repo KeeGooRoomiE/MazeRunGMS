@@ -6,7 +6,7 @@
     "path": "folders/Scripts/SocketIO/Events/Custom.yy",
   },
   "resourceVersion": "1.0",
-  "name": "gmcallback_sio_on_create_player_other",
+  "name": "gmcallback_sio_on_pong",
   "tags": [],
   "resourceType": "GMScript",
 }

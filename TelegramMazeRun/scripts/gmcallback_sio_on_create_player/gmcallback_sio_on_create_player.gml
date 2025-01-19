@@ -1,9 +1,17 @@
-function gmcallback_sio_on_create_player()
-{
-	if !(room == rm_out)
-	{
-		var data = json_decode(argument[0]);	
-		var data_room_id = real(data[? "room_id"]);
-		var data_user_id = real(data[? "user_id"]);
+function gmcallback_sio_on_create_player() {
+	var data = json_decode(argument[0]);
+
+	show_debug_message("//socket.io player creation event callback...");
+	with(instance_create_depth(data[? "x"], data[? "y"], 0, oPlayer)) {
+		isLocalPlayer = true;
+	
+		playerId = data[? "id"];
+		username = data[? "username"];
+		canShot = data[? "canShot"];
+		
+		global.localPl = id;
+		show_debug_message("//socket.io player creation event set values...");
 	}
+
+
 }

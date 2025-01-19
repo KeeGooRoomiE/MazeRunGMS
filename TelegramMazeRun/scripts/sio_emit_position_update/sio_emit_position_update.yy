@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Custom",
-    "path": "folders/Scripts/SocketIO/Events/Custom.yy",
+    "name": "Emit",
+    "path": "folders/Scripts/SocketIO/Emit.yy",
   },
   "resourceVersion": "1.0",
-  "name": "gmcallback_sio_on_create_player_other",
+  "name": "sio_emit_position_update",
   "tags": [],
   "resourceType": "GMScript",
 }
